@@ -31,7 +31,7 @@ xhttp.onreadystatechange = function(){
         }
     }
 }
-xhttp.open("GET", "http://universities.hipolabs.com/search?country=United+States", true);
+xhttp.open("GET", "http://universities.hipolabs.com/search?country=dominican+republic", true);
 xhttp.send()
 }
 cargar();
