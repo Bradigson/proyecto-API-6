@@ -1,0 +1,139 @@
+.container{
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top:250px;
+}
+.ul-1{
+    margin-right:100px;
+    color:#262626;
+}
+.ul-2{
+    margin-left: 100px;
+}
+.ul-3{
+    margin-left: 100px;
+    color:#262626;
+}
+
+header{
+    display:grid;
+    place-items: center;
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100%;
+    padding:40px 100px;
+    z-index: 100;
+    color:#262626;
+    transition: all 1s;
+}
+header.sticky{
+    padding:5px 100px;
+    background:rgba(255,255,255);
+
+}
+h3{
+    text-align: center;
+}
+
+li{
+    list-style-type:none;
+}
+
+::-webkit-scrollbar{
+    background:#eee;
+    width:11px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#6a11cb;
+    border:2px solid #eee;
+    border-radius: 20rem;
+
+}
+
+.circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6, .circle-7{
+    width:150px;
+    height:150px;
+    position:absolute;
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+    border-radius:20em;
+    z-index: -1;
+    animation-name:circle1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function:linear;
+    top:50px;
+}
+.circle-2{
+    top:300px;
+    right:100px;
+    animation-name: circle2;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.circle-3{
+    top:600px;
+    background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+    animation-timing-function: ease-in;
+
+    animation-duration: 4s;
+    left:200px;
+    width: 90px;
+    height: 90px;
+}
+.circle-4{
+    top:900px;
+    left:550px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.circle-5{
+
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    top:1450px;
+    right:30px;
+    animation-name: circle2;
+}
+.circle-6, .circle-7{
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    border-radius:17px;
+    top:400px;
+    left:500px;
+    width:100px;
+    height: 100px;;
+    animation-name: circle3;
+    animation-duration: 7s;
+}
+.circle-7{
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    top:1300px;
+    left:350px;
+
+}
+
+@keyframes circle1{
+    0%{
+        transform: translateX(20px);
+    }
+}
+
+@keyframes circle2{
+    0%{
+        transform: translateY(20px);
+    }
+
+}
+
+@keyframes circle3{
+    0%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform : scale(0.5);
+    }
+
+    70%{
+        transform : translateX(20px);
+    }
+}
